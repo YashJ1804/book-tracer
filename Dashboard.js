@@ -32,9 +32,8 @@ export default function Dashboard() {
   };
 
   const handleLogout = () => {
-    // Clear all localStorage items (books and login data if any)
     localStorage.clear();
-    window.location.reload(); // Simple way to "logout" for frontend-only app
+    window.location.reload(); 
   };
 
   const filtered = books.filter(book =>
